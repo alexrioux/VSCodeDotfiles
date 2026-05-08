@@ -1,0 +1,50 @@
+{
+    "workbench.colorTheme": "monochrome",
+    "workbench.colorCustomizations": {
+        "editor.foreground": "#535353",
+        "editor.background": "#161616"
+    },
+    "editor.fontFamily": "Terminess Nerd Font",
+    "editor.fontSize": 17,
+    "editor.semanticHighlighting.enabled": false,
+    "editor.bracketPairColorization.enabled": false,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                // CONTROL KEYWORDS & BLOCKS
+                "scope": ["keyword.control", "punctuation.section.block"],
+                "settings": {
+                    "foreground": "#00ff55"
+                }
+            },
+            {
+                // TYPES | NUMBERS
+                "scope": ["storage", "constant.numeric"],
+                "settings": {
+                    "foreground": "#7c7c7c"
+                }
+            },
+            {
+                // OPERATORS
+                "scope": ["keyword.operator"],
+                "settings": {
+                    "foreground": "#ffffff"
+                }
+            },
+            {
+                // COMMENTS
+                "scope": ["comment", "punctuation.definition.comment"],
+                "settings": {
+                    "foreground": "#333333"
+                }
+            },
+            {
+                // FUNCTIONS
+                "scope": ["punctuation.separator.delimiter", "entity.name.function", "punctuation.section.arguments"],
+                "settings": {
+                    "foreground": "#b9b9b9"
+                }
+            }
+        ]
+    }
+}
