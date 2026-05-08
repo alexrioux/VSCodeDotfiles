@@ -8,8 +8,24 @@
     "editor.fontSize": 17,
     "editor.semanticHighlighting.enabled": false,
     "editor.bracketPairColorization.enabled": false,
+    "editor.semanticTokenColorCustomizations": {
+        "enabled": true,
+        "rules": {
+            "variable": "#424242",
+            "parameter": "#424242",
+            "type": "#636363", // STRUCT
+            "macro": "#33804c"
+        }
+    },
     "editor.tokenColorCustomizations": {
         "textMateRules": [
+            {
+                // DEFAULT
+                "scope": ["source"],
+                "settings": {
+                    "foreground": "#ff0000"
+                }
+            },
             {
                 // CONTROL KEYWORDS & BLOCKS
                 "scope": ["keyword.control", "punctuation.section.block"],
@@ -21,7 +37,7 @@
                 // TYPES | NUMBERS
                 "scope": ["storage", "constant.numeric"],
                 "settings": {
-                    "foreground": "#7c7c7c"
+                    "foreground": "#636363"
                 }
             },
             {
@@ -33,7 +49,7 @@
             },
             {
                 // COMMENTS
-                "scope": ["comment", "punctuation.definition.comment"],
+                "scope": ["comment", "punctuation.definition.comment", "keyword.control.directive"],
                 "settings": {
                     "foreground": "#333333"
                 }
@@ -44,7 +60,33 @@
                 "settings": {
                     "foreground": "#b9b9b9"
                 }
-            }
+            },
+            {
+                // STRINGS
+                "scope": ["string.quoted"],
+                "settings": {
+                    "foreground": "#5e5e5e"
+                }
+            },
         ]
-    }
+    },
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": "C:\\WINDOWS\\System32\\cmd.exe",
+            "args": []
+        },
+        "Git Bash": {
+            "source": "Git Bash",
+            "icon": "terminal-git-bash"
+        },
+        "x64Dev": {
+            "path": "C:\\WINDOWS\\System32\\cmd.exe",
+            "args": []
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
 }
