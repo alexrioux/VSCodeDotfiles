@@ -89,6 +89,8 @@
         }
     },
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
-    "glassit.alpha": 235,
-    "glassit.step": 20
+
+    // GlassIt-VSC
+    "glassit.alpha": 245,
+    "glassit.step": 10
 }
