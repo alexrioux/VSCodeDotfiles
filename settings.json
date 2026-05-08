@@ -1,11 +1,17 @@
 {
+    // FONT
+    "editor.fontFamily": "Terminess Nerd Font",
+    "editor.fontSize": 17,
+
+    // COLORS
     "workbench.colorTheme": "monochrome",
     "workbench.colorCustomizations": {
         "editor.foreground": "#535353",
-        "editor.background": "#161616"
+        "editor.background": "#161616",
+        "editorError.foreground": "#ff0000",
+        "editorWarning.foreground": "#ffea00",
+        "editorInfo.foreground": "#0062ff"
     },
-    "editor.fontFamily": "Terminess Nerd Font",
-    "editor.fontSize": 17,
     "editor.semanticHighlighting.enabled": false,
     "editor.bracketPairColorization.enabled": false,
     "editor.semanticTokenColorCustomizations": {
@@ -14,62 +20,85 @@
             "variable": "#424242",
             "parameter": "#424242",
             "type": "#636363", // STRUCT
-            "macro": "#33804c"
+            //"macro": "#33804c"
         }
     },
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
                 // DEFAULT
-                "scope": ["source"],
+                "scope": [
+                    "source"
+                ],
                 "settings": {
-                    "foreground": "#ff0000"
+                    "foreground": "#424242"
                 }
             },
             {
                 // CONTROL KEYWORDS & BLOCKS
-                "scope": ["keyword.control", "punctuation.section.block"],
+                "scope": [
+                    "keyword.control",
+                    "punctuation.section.block"
+                ],
                 "settings": {
-                    "foreground": "#00ff55"
+                    "foreground": "#46ff83"
                 }
             },
             {
                 // TYPES | NUMBERS
-                "scope": ["storage", "constant.numeric"],
+                "scope": [
+                    "storage",
+                    "constant.numeric"
+                ],
                 "settings": {
                     "foreground": "#636363"
                 }
             },
             {
                 // OPERATORS
-                "scope": ["keyword.operator"],
+                "scope": [
+                    "keyword.operator"
+                ],
                 "settings": {
                     "foreground": "#ffffff"
                 }
             },
             {
                 // COMMENTS
-                "scope": ["comment", "punctuation.definition.comment", "keyword.control.directive"],
+                "scope": [
+                    "comment",
+                    "punctuation.definition.comment"
+                ],
                 "settings": {
                     "foreground": "#333333"
                 }
             },
             {
-                // FUNCTIONS
-                "scope": ["punctuation.separator.delimiter", "entity.name.function", "punctuation.section.arguments"],
+                // FUNCTIONS & PREPROCESSOR DIRECTIVES
+                "scope": [
+                    "punctuation.separator.delimiter",
+                    "entity.name.function",
+                    "punctuation.terminator",
+                    "punctuation.section",
+                    "keyword.control.directive"
+                ],
                 "settings": {
-                    "foreground": "#b9b9b9"
+                    "foreground": "#a0a0a0"
                 }
             },
             {
                 // STRINGS
-                "scope": ["string.quoted"],
+                "scope": [
+                    "string.quoted"
+                ],
                 "settings": {
                     "foreground": "#5e5e5e"
                 }
             },
         ]
     },
+
+    // TERMINAL
     "terminal.integrated.profiles.windows": {
         "PowerShell": {
             "source": "PowerShell",
@@ -92,5 +121,29 @@
 
     // GlassIt-VSC
     "glassit.alpha": 245,
-    "glassit.step": 10
+    "glassit.step": 10,
+    "extensions.ignoreRecommendations": true,
+
+    // FORMATTING
+    "C_Cpp.formatting": "vcFormat",
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "C_Cpp.vcFormat.indent.braces": false,
+    "C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "newLine",
+    "C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "newLine",
+    "C_Cpp.vcFormat.newLine.scopeBracesOnSeparateLines": true,
+    "C_Cpp.vcFormat.newLine.beforeOpenBrace.lambda": "newLine",
+    "C_Cpp.vcFormat.newLine.beforeOpenBrace.namespace": "newLine",
+    "C_Cpp.vcFormat.newLine.beforeOpenBrace.type": "newLine",
+    "C_Cpp.vcFormat.newLine.beforeWhileInDoWhile": true,
+    "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyFunction": true,
+    "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyType": true,
+    "editor.formatOnType": true,
+
+    // CURSOR
+    "editor.cursorBlinking": "phase",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorStyle": "line-thin",
+    "editor.cursorWidth": 1
 }
