@@ -17,8 +17,8 @@
     "editor.semanticTokenColorCustomizations": {
         "enabled": true,
         "rules": {
-            "variable": "#424242",
-            "parameter": "#424242",
+            "variable": "#4e4e4e",
+            "parameter": "#4e4e4e",
             "type": "#636363", // STRUCT
             //"macro": "#33804c"
         }
