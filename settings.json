@@ -47,7 +47,8 @@
             {
                 // TYPES | NUMBERS
                 "scope": [
-                    "storage",
+                    "storage.type",
+                    "support.type",
                     "constant.numeric"
                 ],
                 "settings": {
@@ -129,7 +130,13 @@
     "editor.defaultFormatter": "ms-vscode.cpptools",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.autoIndent": "none",
+    "files.trimFinalNewlines": true,
     "C_Cpp.vcFormat.indent.braces": false,
+    "C_Cpp.vcFormat.indent.caseLabels": true,
+    "C_Cpp.vcFormat.space.aroundAssignmentOperator": "ignore",
+    "C_Cpp.vcFormat.space.betweenEmptyParameterListParentheses": true,
     "C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "newLine",
     "C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "newLine",
     "C_Cpp.vcFormat.newLine.scopeBracesOnSeparateLines": true,
@@ -139,11 +146,13 @@
     "C_Cpp.vcFormat.newLine.beforeWhileInDoWhile": true,
     "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyFunction": true,
     "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyType": true,
-    "editor.formatOnType": true,
 
     // CURSOR
     "editor.cursorBlinking": "phase",
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.cursorStyle": "line-thin",
-    "editor.cursorWidth": 1
+    "editor.cursorWidth": 1,
+    
+    // GENERAL
+    "editor.smoothScrolling": true,
 }
