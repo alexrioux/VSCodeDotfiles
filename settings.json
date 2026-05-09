@@ -8,9 +8,9 @@
     "workbench.colorCustomizations": {
         "editor.foreground": "#535353",
         "editor.background": "#161616",
-        "editorError.foreground": "#ff0000",
-        "editorWarning.foreground": "#ffea00",
-        "editorInfo.foreground": "#0062ff"
+        "editorError.foreground": "#e30000",
+        "editorWarning.foreground": "#d2c100",
+        "editorInfo.foreground": "#0050d1"
     },
     "editor.semanticHighlighting.enabled": false,
     "editor.bracketPairColorization.enabled": false,
@@ -41,7 +41,7 @@
                     "punctuation.section.block"
                 ],
                 "settings": {
-                    "foreground": "#46ff83"
+                    "foreground": "#00ff6e"
                 }
             },
             {
@@ -155,4 +155,5 @@
     
     // GENERAL
     "editor.smoothScrolling": true,
+    "git.ignoreMissingGitWarning": true,
 }
