@@ -121,10 +121,6 @@
         "Git Bash": {
             "source": "Git Bash",
             "icon": "terminal-git-bash"
-        },
-        "x64Dev": {
-            "path": "C:\\WINDOWS\\System32\\cmd.exe",
-            "args": []
         }
     },
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
