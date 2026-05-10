@@ -107,7 +107,16 @@
         },
         "Command Prompt": {
             "path": "C:\\WINDOWS\\System32\\cmd.exe",
-            "args": []
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Developer Command Prompt": {
+            "path": "C:\\WINDOWS\\System32\\cmd.exe",
+            "args": [
+                "/k",
+                "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\Tools\\VsDevCmd.bat"
+            ],
+            "icon": "terminal-cmd"
         },
         "Git Bash": {
             "source": "Git Bash",
