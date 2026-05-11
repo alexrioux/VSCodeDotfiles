@@ -160,4 +160,5 @@
     // GENERAL
     "editor.smoothScrolling": true,
     "git.ignoreMissingGitWarning": true,
+    "editor.minimap.enabled": false,
 }
