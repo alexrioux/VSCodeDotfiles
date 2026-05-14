@@ -118,7 +118,7 @@
             "path": "C:\\WINDOWS\\System32\\cmd.exe",
             "args": [
                 "/k",
-                "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\Tools\\VsDevCmd.bat"
+                "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Auxiliary\\Build\\vcvars64.bat"
             ]
         }
     },
